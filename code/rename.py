@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 # import torch, torchvision
 # import mmseg
 # import mmcv
@@ -9,7 +11,9 @@ import os
 import shutil
 import sys
 
+#dacon에서 다운로드 후 data폴더 저장 경로
 data_path = 'open/' ##
+#TRAIN_0000.png -> 0000.png와 같이 rename한 data폴더 저장할 경로
 output_path = "rename_open/" ##
 
 img_src = os.path.join(data_path, 'train_img/')
@@ -18,7 +22,7 @@ lab_src = os.path.join(data_path, 'train_label/')
 img_output = os.path.join(output_path, 'train_img/')
 lab_output = os.path.join(output_path, 'train_label/')
 
-# 처음에만!!! (vessel은 계속)
+# 처음에만!!! 
 def renameFiles(data_directory,output_directory, target_label):
     # Iterate over all files in the source directory
     for filename in os.listdir(data_directory):
