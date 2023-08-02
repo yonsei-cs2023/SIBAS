@@ -136,9 +136,9 @@ cd /workspace/data_preprocessing
 
 ```
 
-# #3-4: private score 복원 가능한 코드 파일로 학습 후 inference하는 법
+# #3~4: private score 복원 가능한 코드 파일로 학습 후 inference하는 법
 
-# #5: private score 복원 가능한 모델 weight파일(.pth)로 inference하는 법
+
 
 ## 3. Preprocess 코드 실행
 
@@ -264,6 +264,8 @@ python3 inference_after_train.py
         - trainA.py
         - trainB.py
         - trainC.py
+
+# #5: private score 복원 가능한 모델 weight파일(.pth)로 inference하는 법
 
 ## 5. Inference 코드 실행 방법 (weight 불러와서 inference 하는 방법)
 
