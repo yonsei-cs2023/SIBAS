@@ -90,7 +90,11 @@ checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segfor
 
 **YCS 폴더를 하나 만들고 그 안에 open folder와 data_preprocessing, train 폴더를 이동시킨다.**
 
-![스크린샷 2023-08-02 오후 11.49.29.png](src="https://github.com/yonsei-cs2023/SIBAS/assets/63281151/c729b93d-8cf0-446f-94fd-817e01852101")
+
+
+<p align="center">
+  <img src="https://github.com/yonsei-cs2023/SIBAS/assets/63281151/c729b93d-8cf0-446f-94fd-817e01852101">
+</p>
 
 ## 2. 도커를 사용해 라이브러리 등 필요 환경 구축 (도커 컨테이너 생성 및 실행 방법)
 
