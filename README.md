@@ -107,7 +107,7 @@ docker build -t ycs-image [도커파일 directory 경로]
 1-2) 이미 생성된 도커이미지 다운받는 경우
 
 ```python
-	docker pull docker.io/cygbbhx/ycs-image:latest
+docker pull docker.io/cygbbhx/ycs-image:latest
 ```
 
 **2) 데이터셋 및 코드 마운트하고 도커 이미지를 이용해 도커 컨테이너 생성하기**
@@ -129,7 +129,7 @@ docker exec -ti ycs /bin/bash
 docker start ycs 
 ```
 
-**4) 처음 실행 후 도커 컨테이너에서의 초기 위치는 /mmsegmentation이므로  /workspace/data_preprocessing @ 폴더안으로 이동**
+**4) 처음 실행 후 도커 컨테이너에서의 초기 위치는 /mmsegmentation이므로  /workspace/data_preprocessing 폴더안으로 이동**
 
 ```python
 cd /workspace/data_preprocessing
@@ -142,7 +142,7 @@ cd /workspace/data_preprocessing
 
 ## 3. Preprocess 코드 실행
 
-**1) [preprocessing.sh](http://preprocess.sh) bash파일을 실행한다.**
+**1) preprocessing.sh bash파일을 실행한다.**
 
 ```python
 ./preprocessing.sh
@@ -185,7 +185,7 @@ cd /workspace/train/
 python3 trainA.py
 ```
 
-**2) [trainA.py](http://trainA.py) 실행이 끝난 후 [trainB.py](http://trainB.py) 파일 실행한다.**
+**2) trainA.py 실행이 끝난 후 trainB.py 파일 실행한다.**
 
 아래 두 명령어를 순서대로 cmd에 입력한다.
 
@@ -195,7 +195,7 @@ cd /workspace/train/
 python3 trainB.py
 ```
 
-**3)  [trainB.py](http://trainA.py) 실행이 끝난 후 [trainC.py](http://trainB.py) 파일 실행한다.**
+**3)  trainB.py 실행이 끝난 후 trainC.py 파일 실행한다.**
 
 아래 두 명령어를 순서대로 cmd에 입력한다.
 
@@ -205,7 +205,7 @@ cd /workspace/train/
 python3 trainB.py
 ```
 
-**4) [trainC.py](http://trainC.py) 실행이 끝난 후 학습이 완료되었음으로 inference_after_train.py를 실행한다.**
+**4) trainC.py 실행이 끝난 후 학습이 완료되었음으로 inference_after_train.py를 실행한다.**
 
 아래 두 명령어를 순서대로 cmd에 입력한다.
 
@@ -221,19 +221,19 @@ python3 inference_after_train.py
     
     mmseg의 pretrained model weights를 불러오고 crop된 train image를 이용해 53550 iterations만큼 학습
     
-    segformer_modelA에 model weight 파일(.pth)이 저장되고 vis_data 폴더 안에 [config.py](http://config.py) 파일과 tensorboard log가 찍힌다.
+    segformer_modelA에 model weight 파일(.pth)이 저장되고 vis_data 폴더 안에 config.py 파일과 tensorboard log가 찍힌다.
     
 - trainB.py:
     
     modelA의 학습된 weights(segformer_modelA 폴더에 저장된 .pth 파일)를 불러오고 non crop된 train image를 이용해 35700 iterations만큼 학습
     
-    segformer_modelB에 model weight 파일(.pth)이 저장되고 vis_data 폴더 안에 [config.py](http://config.py) 파일과 tensorboard log가 찍힌다.
+    segformer_modelB에 model weight 파일(.pth)이 저장되고 vis_data 폴더 안에 config.py 파일과 tensorboard log가 찍힌다.
     
 - trainC.py:
     
     modelB의 학습된 weights(segformer_modelB 폴더에 저장된 .pth 파일)를 불러오고 non crop된 train image를 이용해 120000 iterations만큼 학습
     
-    segformer_modelC에 model weight 파일(.pth)이 저장되고 vis_data 폴더 안에 [config.py](http://config.py) 파일과 tensorboard log가 찍힌다.
+    segformer_modelC에 model weight 파일(.pth)이 저장되고 vis_data 폴더 안에 config.py 파일과 tensorboard log가 찍힌다.
     
 - inference_after_train.py:
     
