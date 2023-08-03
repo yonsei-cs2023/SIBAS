@@ -130,8 +130,6 @@ checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segfor
 
 1. **필요한 라이브러리를 requirements.txt를 이용해 다운 받는다.**
     
-    [requirements.txt](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/36e7e621-e98f-4832-b60c-c95beccc5be7/requirements.txt)
-    
 
 ```python
 conda create -n "가상환경 명" python=3.7 -y
@@ -150,7 +148,7 @@ pip install tensorboard
 
 2. **만약 requirements.txt를 install 했을 때 버전 충돌이 있다면 아래의 명령어를 터미널에 순서대로 입력한다.**
 
-#pip, CUDA 11.7 version
+#1) CUDA 11.7 version
 ```python
 conda create -n mmseg python=3.7 -y
 conda activate mmseg
@@ -165,7 +163,7 @@ pip install -e .
 pip install tensorboard
 ```
 
-#CUDA 11.8.0 버전
+#2) CUDA 11.8.0 버전
 ```python
 conda create -n "가상환경 명" python=3.7 -y
 conda activate "가상환경 명"
@@ -225,7 +223,7 @@ chmod 755 preprocessing.sh
 python trainA.py --mmseg [git clone한 mmsegmentation 경로] --data [preprocessed된 dataset 폴더 경로]
 ```
 
-- `[preprocessed된 dataset 폴더 경로]` 는 [3-1)](https://www.notion.so/Readme-md-f3913621f4704f738f91623f79c71c57?pvs=21)의 PREPROCESSED 경로와 일치해야 한다.
+- `[preprocessed된 dataset 폴더 경로]` 는 3-1의 PREPROCESSED 경로와 일치해야 한다.
 
 **2) trainA.py 실행이 끝난 후 trainB.py 파일을 실행한다.**
 
@@ -233,7 +231,7 @@ python trainA.py --mmseg [git clone한 mmsegmentation 경로] --data [preprocess
 python trainB.py --mmseg [git clone한 mmsegmentation 경로] --data [preprocessed된 dataset 폴더 경로로]
 ```
 
-- `[preprocessed된 dataset 폴더 경로]` 는 [3-1)](https://www.notion.so/Readme-md-f3913621f4704f738f91623f79c71c57?pvs=21)의 PREPROCESSED 경로와 일치해야 한다.
+- `[preprocessed된 dataset 폴더 경로]` 는 3-1의 PREPROCESSED 경로와 일치해야 한다.
 
 **3)  trainB.py 실행이 끝난 후 trainC.py 파일을 실행한다.**
 
@@ -241,7 +239,7 @@ python trainB.py --mmseg [git clone한 mmsegmentation 경로] --data [preprocess
 python trainC.py --mmseg [git clone한 mmsegmentation 경로] --data [preprocessed된 dataset 폴더 경로]
 ```
 
-- `[preprocessed된 dataset 폴더 경로]` 는 [3-1)](https://www.notion.so/Readme-md-f3913621f4704f738f91623f79c71c57?pvs=21)의 PREPROCESSED 경로와 일치해야 한다.
+- `[preprocessed된 dataset 폴더 경로]` 는 3-1의 PREPROCESSED 경로와 일치해야 한다.
 
 **4) trainC.py 실행이 끝난 후 학습이 완료되었음으로 아래 명령어를 통해 inference_after_train.py를 실행한다.**
 
