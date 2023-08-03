@@ -178,6 +178,20 @@ pip install "mmsegmentation==1.0.0"
 pip install future tensorboard 
 ```
 
+#3) [mmseg 공식 문서 참고](https://mmsegmentation.readthedocs.io/en/latest/get_started.html)
+```python
+conda create -n "가상환경 명" python=3.8 -y
+conda activate "가상환경 명"
+conda install pytorch torchvision -c pytorch
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.0"
+git clone -b main https://github.com/open-mmlab/mmsegmentation.git 
+cd mmsegmentation
+pip install -v -e .
+pip install future tensorboard 
+```
+
 # #3-4: private score 복원 가능한 코드 파일로 학습 후 inference하는 법
 
 private score 복원 가능한 코드파일: data_preprocessing, train 폴더 안의 코드들
