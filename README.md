@@ -1,4 +1,4 @@
-# SIBAS
+# SIBAS-YCS
 Satellite Image Building Area Segmentation
 
 # readme
