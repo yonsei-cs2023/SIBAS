@@ -17,7 +17,7 @@ Satellite Image Building Area Segmentation
 
 ## 0. 개발 환경
 
-```python
+```markdown
 
 1.
 개발 환경: 
@@ -61,7 +61,7 @@ gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 
 ## 0.  사용한 pretrained 모델 출처
 
-```python
+```markdown
 Method: Segformer
 Backbone: MIT-B5
 traindata: Cityscapes
