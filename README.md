@@ -90,7 +90,7 @@ checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segfor
 
 ```markdown
 	open
-  ├── train_img
+  	├── train_img
 	│   ├── TRAIN_0000.png
 	│   ├── ...
 	│   └── TRAIN_7139.png
@@ -100,14 +100,14 @@ checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segfor
 	│   └── TEST_60639.png
 	├── train.csv
 	├── test.csv
-  └── sample_submission.csv
+  	└── sample_submission.csv
 ```
 
 제출한 zipfile 압축을 풀면 구조는 다음과 같다.
 
 ```markdown
 	YCS
-  ├── data_preprocessing
+  	├── data_preprocessing
 	│   ├── splits                        # txt files with train/val filenames
 	│   ├── data_crop.py
 	│   ├── draw_label.py
@@ -123,7 +123,7 @@ checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segfor
 	│   ├── trainB.py
 	│   └── trainC.py
 	├── readme.md
-  └── requirements.txt
+  	└── requirements.txt
 ```
 
 ## 2. 라이브러리 등 필요 환경 구축  (requirements.txt)
