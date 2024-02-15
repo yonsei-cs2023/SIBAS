@@ -1,6 +1,12 @@
 # SIBAS
 Satellite Image Building Area Segmentation
 
+## Contributors
+
+- [박윤정](https://github.com/cottonlove)
+- [김현중](https://github.com/사용자2)
+- [유소현](https://github.com/사용자3)
+
 # 0. Library Requirements
 
 - opencv-python (Version == 4.8.0)
