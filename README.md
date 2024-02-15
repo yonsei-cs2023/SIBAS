@@ -1,6 +1,12 @@
 # SIBAS-YCS
 Satellite Image Building Area Segmentation
 
+## Contributors
+
+- [사용자1](https://github.com/cottonlove)
+- [사용자2](https://github.com/사용자2)
+- [사용자3](https://github.com/사용자3)
+
 # readme
 
 ## 0. Library Requirements (버전 기입하기)
